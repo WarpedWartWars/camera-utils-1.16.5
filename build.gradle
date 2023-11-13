@@ -6,8 +6,8 @@ plugins {
     id 'mod-update' version '2.0.0'
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+sourceCompatibility = JavaVersion.VERSION_8
+targetCompatibility = JavaVersion.VERSION_8
 
 archivesBaseName = archives_base_name
 version = mod_version
@@ -78,7 +78,7 @@ curseforge {
         releaseType = release_type
         addGameVersion curseforge_minecraft_version
         addGameVersion 'Fabric'
-        addGameVersion 'Java 17'
+        addGameVersion 'Java 8'
         mainArtifact(file("${buildDir}/libs/${archivesBaseName}-${version}.jar")) {
             displayName = "[FABRIC][${minecraft_version}] ${mod_name} ${mod_version}"
             relations {
